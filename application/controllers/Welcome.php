@@ -40,4 +40,7 @@ class Welcome extends CI_Controller {
 	public function upvotes(){
 		$this->load->view('upvotes');
 	}
+	public function comments_user(){
+		$this->load->view('comments_user');
+	}
 }
