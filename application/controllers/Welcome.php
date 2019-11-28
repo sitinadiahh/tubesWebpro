@@ -37,5 +37,7 @@ class Welcome extends CI_Controller {
 	public function post_user(){
 		$this->load->view('post_user');
 	}
-	
+	public function upvotes(){
+		$this->load->view('upvotes');
+	}
 }
