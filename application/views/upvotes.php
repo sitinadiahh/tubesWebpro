@@ -15,9 +15,9 @@
               <p>My Funny Collection</p>
               <div class="btn-group" style="width: 650px;">
                 <a href="<?php echo base_url('Welcome/setting') ?>" class="btn btn-info" role="button" ><b>Home</b></a>
-                <a href="<?php echo base_url('Welcome/setting_password') ?>" class="btn btn-info" role="button" ><b>Post</b></a>
-                <a href="<?php echo base_url('Welcome/setting_account') ?>" class="btn btn-info" role="button" ><b>Comment</b></a>
-                <a href="<?php echo base_url('Welcome/setting_account') ?>" class="btn btn-info" role="button" ><b>Upvotes</b></a>
+                <a href="<?php echo base_url('Welcome/post_user') ?>" class="btn btn-info" role="button" ><b>Post</b></a>
+                <a href="<?php echo base_url('Welcome/comments_user') ?>" class="btn btn-info" role="button" ><b>Comment</b></a>
+                <a href="<?php echo base_url('Welcome/upvotes') ?>" class="btn btn-info" role="button" ><b>Upvotes</b></a>
               </div>
               <br>
               <br>
