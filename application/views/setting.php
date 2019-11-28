@@ -11,9 +11,9 @@
             <?php $this->load->view('partials/sidebar') ?>
             <div class="col-2.9">
               <div class="btn-group-vertical" style="width: 250px; padding-top: 30px;">
-                <button type="button" class="btn btn-primary" style="background-color: white; color: grey; text-align: left;"><b>Account</b></button>
+                <a href="<?php echo base_url('Welcome/setting') ?>" class="btn btn-info" role="button" >Account</a>
                 <a href="<?php echo base_url('Welcome/setting_password') ?>" class="btn btn-info" role="button" >Password</a>
-                <button type="button" class="btn btn-primary" style="background-color: white; color: grey; text-align: left;"><b>Profile</b></button>
+                <a href="<?php echo base_url('Welcome/setting_account') ?>" class="btn btn-info" role="button" >Profile</a>
               </div>      
             </div>
                 

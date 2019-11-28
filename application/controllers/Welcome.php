@@ -28,4 +28,7 @@ class Welcome extends CI_Controller {
 	public function setting_password(){
 		$this->load->view('setting_password');
 	}
+	public function setting_account(){
+		$this->load->view('setting_account');
+	}
 }
