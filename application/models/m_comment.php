@@ -23,27 +23,25 @@ class m_comment extends CI_Model {
     }
 
     public function tambahComment(){
-        $data= array{
+        $data= array(
             "id_post" => $this->input->post('id_post'),
             "id_user" => $this->input->post('id_user'),
             "password" => $this->input->post('password'),
             "isi_comment" => $this->input->post('isi_comment'),
             "waktu_comment" => $this->input->post('waktu_comment')
-            
-        };
+        );
 
         $this->db->insert('comment' $data);
     }
 
     public function editcomment($id_comment){
-        $data= array{
+        $data= array(
             "id_post" => $this->input->post('id_post'),
             "id_user" => $this->input->post('id_user'),
             "password" => $this->input->post('password'),
             "isi_comment" => $this->input->post('isi_comment'),
             "waktu_comment" => $this->input->post('waktu_comment')
-            
-        };
+        );
 
         $this->db->where('id_comment', $id_comment);
         $this->db->update('comment', $data);
