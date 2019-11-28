@@ -33,8 +33,8 @@
             </a>
           
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">My Profile</a>
-              <a class="dropdown-item" href="#">Setting</a>
+              <a class="dropdown-item" href="Welcome/profile_user">My Profile</a>
+              <a class="dropdown-item" href="Welcome/setting">Setting</a>
               <a class="dropdown-item" href="<?php echo base_url('user/logout') ?>">Logout</a>
             </div>
           </div>
