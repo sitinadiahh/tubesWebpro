@@ -29,15 +29,8 @@ class m_post extends CI_Model {
         $this->db->delete('post');
     }
 
-    public function tambahPost(){
-        $data= array(
-            "kategori"=> $this->input->post('kategori'),
-            "judul"=> $this->input->post('judul'),
-            "waktu_upload"=> $this->input->post('waktu_upload'),
-            "gambar"=> $this->input->post('gambar'),
-            "point"=> $this->input-->post('point'),
-            "id_user"=> $this->input->post('id_user')
-        );
+    public function tambahPost($data){
+        
 
         $this->db->insert('post', $data);
     }

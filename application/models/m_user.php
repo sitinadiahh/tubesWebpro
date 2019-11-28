@@ -22,25 +22,24 @@ class m_user extends CI_Model {
     }
 
     public function tambahUser(){
-        $data= array{
+        $data= array(
             "nama" => $this->input->user('nama'),
             "email" => $this->input->user('email'),
             "password" => $this->input->user('password'),
             "gender" => $this->input->user('gender')
             
-        };
-
-        $this->db->insert('user' $data);
+        );
+        $this->db->insert('user', $data);
     }
 
     public function edituser($id_user){
-        $data= array{
+        $data= array(
             "nama" => $this->input->user('nama'),
             "email" => $this->input->user('email'),
             "password" => $this->input->user('password'),
             "gender" => $this->input->user('gender')
             
-        };
+        );
 
         $this->db->where('id_user', $id_user);
         $this->db->update('user', $data);

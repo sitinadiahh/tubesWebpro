@@ -18,17 +18,40 @@ class Post extends CI_Controller {
         $this->load->view('home', $content);
     }
 
-    public function uploadPost(){
-        $this->m_post->tambahPost();
-        //$this->load->view('tambahPost');
-        
-    }
-
     public function detailPost($id){
         $content = $this->m_post->getPostById($id);
         $this->load->view('detailPost', $content);
         
     }
+
+    public function aksi_upload(){
+		$config['upload_path']          = './gambar/';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 100;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+
+		$this->load->library('upload', $config);
+
+		if ( ! $this->upload->do_upload('berkas')){
+			$error = array('error' => $this->upload->display_errors());
+			echo"GAGAL";
+		}else{
+            $data = array('upload_data' => $this->upload->data());
+            $data2 = $this->upload->data();
+            
+            $data1= array(
+                "kategori"=> $this->input->post('kategori'),
+                "judul"=> $this->input->post('judul'),
+                "gambar"=> $data2['file_name'],
+                "id_user"=> $this->session->userdata('id_user')
+            );
+
+            $this->m_post->tambahPost($data1);
+
+			redirect('post');
+		}
+	}
 
 }
 

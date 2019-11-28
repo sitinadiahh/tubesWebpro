@@ -28,7 +28,7 @@
                   <h2 style="color: black; font-size: 24px;"><?php echo $po['judul'] ?></h2>
                 </div>
                 <div class="row">
-                  <img src="pokemon1.jpg" alt="" width="100%">
+                  <img src="<?php echo base_url('gambar/'). $po['gambar'] ?>" alt="" width="100%">
                 </div>
                 <div class="row">
           
