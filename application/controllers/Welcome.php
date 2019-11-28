@@ -31,4 +31,8 @@ class Welcome extends CI_Controller {
 	public function setting_account(){
 		$this->load->view('setting_account');
 	}
+	public function profile_user(){
+		$this->load->view('profile_user');
+	}
+	
 }
