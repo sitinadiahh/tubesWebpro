@@ -43,4 +43,7 @@ class Welcome extends CI_Controller {
 	public function comments_user(){
 		$this->load->view('comments_user');
 	}
+	public function commentsTampilan(){
+		$this->load->view('commentsTampilan');
+	}
 }
