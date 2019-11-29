@@ -15,7 +15,8 @@ class User extends CI_Controller {
     
     public function index()
     {
-        
+    public function signup(){
+        $data = $this->m_user->getUserByNama($this->post('nama'));
     }
 
     public function login(){
